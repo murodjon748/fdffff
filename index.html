@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Foydalanuvchidan ismni so'rash
+        let name = prompt("Ismingizni kiriting:");
+
+        // Foydalanuvchidan harfni so'rash
+        let character = prompt("Bironta harf yozing");
+
+        // Harflarni kichik harfga o'tkazish
+        name = name.toLowerCase();
+        character = character.toLowerCase();
+
+        // Harf isming ichida bor-yo'qligini tekshirish
+        if (name.includes(character)) {
+            alert(` ${name}  isming ichida "${character}" harfi mavjud.`);
+        } else {
+            alert(` ${name}   isming ichida "${character}" harfi mavjud emas.`);
+        }
+
+    </script>
+</body>
+
+</html>
